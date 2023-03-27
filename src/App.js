@@ -63,7 +63,7 @@ function App() {
         )}
         {isLoading && (
             <div className="d-flex align-items-center justify-content-center">
-              <button className="btn btn-outline-primary" type="button" disabled>
+              <button className="btn btn-dark" type="button" disabled>
           <span className="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
           Loading...
         </button>
