@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [breeds, setBreeds] = useState([]);
@@ -40,7 +41,7 @@ function App() {
   return (
     <div className="container">
       <div className="row m-4 d-flex justify-content-center align-items-center">
-          <h1 className="text-center">Doggy Breed</h1>
+          <h1 className="text-center text-white">Doggy Breed</h1>
           <div className="input-group w-25">
             <select className="form-select" id="inputGroupSelect04" aria-label="Example select with button addon" value={selectedBreed}
             onChange={(event) => setSelectedBreed(event.target.value)}>
@@ -51,7 +52,7 @@ function App() {
               </option>
             ))}
             </select>
-            <button className="btn btn-outline-primary" type="button" disabled={!selectedBreed}
+            <button className="btn btn-success" type="button" disabled={!selectedBreed}
             onClick={searchByBreed}>Search</button>
           </div>
         </div>
